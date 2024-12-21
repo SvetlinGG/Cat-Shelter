@@ -1,0 +1,18 @@
+{
+  "name": "cat-shelter",
+  "version": "1.0.0",
+  "description": "Multy-Page application ( JS Back-End)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
