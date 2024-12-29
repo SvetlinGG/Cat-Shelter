@@ -1,4 +1,6 @@
-module.exports = `<!DOCTYPE html>
+const catTemplate = require('../cat.html')
+
+module.exports = (cats) => `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +8,7 @@ module.exports = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="/content/styles/site.css">
+    <link rel="stylesheet" href="/styles/site.css.js">
     <link rel="shortcut icon" type="image/png" href="../../content/images/pawprint.ico" />
     <title>Cat Shelter</title>
 </head>
@@ -30,7 +32,7 @@ module.exports = `<!DOCTYPE html>
     <main>
         <section class="cats">
             <ul>
-                {{cats}}
+                ${cats.map(catTemplate).join('\n')}
             </ul>
         </section>
     </main>

@@ -1,4 +1,4 @@
-module.exports = `<li>
+module.exports =(cat) => `<li>
     <img src="${cat.imageUrl}" alt="${cat.name}">
     <h3>${cat.name}</h3>
     <p><span>Breed: </span>${cat.breed}</p>
